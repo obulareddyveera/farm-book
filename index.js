@@ -8,6 +8,7 @@ import db from "./src/config/database.js";
 // Import router
 import Router from "./src/routes.js";
  
+const port = process.env.PORT || 3001;
 dotenv.config();
 // Init express
 const app = express();
@@ -15,7 +16,6 @@ const app = express();
 app.use(express.json());
 // use cors
 app.use(cors());
- 
 // Testing database connection 
 try {
     await db.authenticate();
@@ -28,4 +28,4 @@ try {
 app.use(Router);
  
 // listen on port
-app.listen(5000, () => console.log('Server running at http://localhost:5000'));
+app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
