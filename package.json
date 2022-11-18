@@ -1,5 +1,9 @@
 {
+  "type": "module",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "sequelize": "^6.17.0",
     "sequelize-cockroachdb": "^6.0.5"
   }

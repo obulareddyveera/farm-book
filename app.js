@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Sequelize = require("sequelize-cockroachdb");
 
 // Connect to CockroachDB through Sequelize.
